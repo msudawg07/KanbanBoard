@@ -1,0 +1,32 @@
+#head {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  font-size: 2.5vw;
+  color: rgb(24, 119, 242);
+}
+
+#addNewTaskButton {
+  font-size: 0.8vw;
+  display: block;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 1vw;
+}
+
+#kanbanContainer {
+  display: flex;
+  width: 1300px;
+  justify-content: space-around;
+  margin: 25px auto 0px;
+}
+
+.taskColumn {
+  width: 23%;
+  height: 75vh;
+  overflow: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-image: initial;
+  border-radius: 10px;
+}
