@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-{%load static %}
+{% load static %}
 <html lang="en">
   <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KanbanBoard</title>
-  <link rel="stylesheet" href="/static/css/kanbanmain.css">
-  <script src="/static/js/kanbanmain.js" defer=""></script>
+  <link rel="stylesheet" href="{% static 'css/kanbanmain.css' %}">
+  <script src="{% static 'js/kanbanmain.js' %}" defer></script>
 </head>
-<body>
+  <body>
 
+      <div id="head">Kanban Board</div>
+      <button id="addNewTaskButton">Add New Task</button>
 
-  <div id="head">Kanban Board</div>
-  <button id="addNewTaskButton">Add New Task</button>
+      <div id="kanbanContainer">
+        <div class="taskColumn"></div>
+        <div class="taskColumn"></div>
+        <div class="taskColumn"></div>
+        <div class="taskColumn"></div>
+      </div>
 
-  <div id="kanbanContainer">
-    <div class="taskColumn"></div>
-    <div class="taskColumn"></div>
-    <div class="taskColumn"></div>
-    <div class="taskColumn"></div>
-  </div>
+    </body>
+  </html>
