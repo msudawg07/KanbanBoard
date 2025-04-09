@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KanbanBoard</title>
   <link rel="stylesheet" href="{% static 'css/kanbanmain.css' %}">
-  <script src="{% static 'js/kanbanmain.js' %}" defer></script>
+  <script type="module" src="{% static 'js/kanbanmain.js' %}" defer></script>
 </head>
   <body>
 
       <div id="head">Kanban Board</div>
       <button id="addNewTaskButton">Add New Task</button>
+
 
       <div id="kanbanContainer">
         <div class="taskColumn"></div>

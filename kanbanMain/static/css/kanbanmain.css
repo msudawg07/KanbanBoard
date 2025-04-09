@@ -1,3 +1,7 @@
+/* * {
+  border: red solid 1px;
+} */
+
 #head {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-align: center;
@@ -15,7 +19,7 @@
 
 #kanbanContainer {
   display: flex;
-  width: 1300px;
+  width: 75%;
   justify-content: space-around;
   margin: 25px auto 0px;
 }
@@ -29,4 +33,32 @@
   border-color: black;
   border-image: initial;
   border-radius: 10px;
+}
+
+#addTaskPopup {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  width: 33%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: navy;
+  color: white;
+  z-index: 1000;
+  padding: 20px;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
 }
