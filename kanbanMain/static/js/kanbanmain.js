@@ -6,8 +6,6 @@ addNewTask.addEventListener('click', () => {
   addNewTaskPopup()
 })
 
-//let newTaskPopu = `<p>SUPP</p>`
-
 function addNewTaskPopup() {
   // alert('hello')
   // console.log(newTaskPopup)
@@ -16,4 +14,11 @@ function addNewTaskPopup() {
   popUp.id = 'addTaskPopup';
   popUp.innerHTML = newTaskPopup
   body.appendChild(popUp)
+
+  document.addEventListener('click', (event) => {
+    console.log(event.target.id)
+    if(event.target.id !== 'addTaskPopup') {
+      console.log("YOOO")
+    }
+  })
 }
