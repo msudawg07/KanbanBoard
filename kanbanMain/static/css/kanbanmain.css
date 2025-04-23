@@ -17,11 +17,43 @@
   padding: 1vw;
 }
 
+#kanbanHeaders {
+  display: flex;
+  width: 75%;
+  justify-content: space-around;
+  margin: 20px auto 0px auto;
+}
+
+.taskColumnHeader {
+  width: 23%;
+  height: 7vh;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-image: initial;
+  border-radius: 10px;
+}
+
 #kanbanContainer {
   display: flex;
   width: 75%;
   justify-content: space-around;
-  margin: 25px auto 0px;
+  margin: auto;
+}
+
+/* .columnHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7%;
+  background-color: antiquewhite;
+  margin: auto;
+  border-bottom: solid black 1px;
+} */
+
+.sectionWithTasks {
+  background-color: lightgray;
+  height: 92.9%;
 }
 
 .taskColumn {
