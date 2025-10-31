@@ -2,19 +2,24 @@ A full-stack Kanban Board web app built using JavaScript on the frontend and Dja
 
 To run locally:
 
-git clone https://github.com/msudawg07/KanbanBoard.git
+# Download the project code from GitHub
+git clone https://github.com/<your-username>/KanbanBoard.git
 
 cd KanbanBoard
 
 pip install pipenv
 
+# Create and activate the virtual environment for this project
 pipenv shell
 
+# Install all Python packages listed in Pipfile
 pipenv install
 
+# Set up the SQLite database tables
 python manage.py migrate
 
-pythin manage.py runserver
+# Run the backend server
+python manage.py runserver
 
 Navigate to:
 
